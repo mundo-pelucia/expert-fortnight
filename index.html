@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pelúcia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mundo Pelúcia</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Carrinho</a>
+        </nav>
+    </header>
+    <main>
+        <section class="produtos">
+            <div class="produto" onclick="adicionarAoCarrinho('Ursinho Caramelo')">
+                <img src="https://via.placeholder.com/200x200?text=Ursinho+Caramelo" alt="Ursinho Caramelo">
+                <h3>Ursinho Caramelo</h3>
+                <p>R$ 49,90</p>
+            </div>
+            <div class="produto" onclick="adicionarAoCarrinho('Almofada Panda')">
+                <img src="https://via.placeholder.com/200x200?text=Almofada+Panda" alt="Almofada Panda">
+                <h3>Almofada Panda</h3>
+                <p>R$ 34,90</p>
+            </div>
+            <div class="produto" onclick="adicionarAoCarrinho('Cachorrinho Azul')">
+                <img src="https://via.placeholder.com/200x200?text=Cachorrinho+Azul" alt="Cachorrinho Azul">
+                <h3>Cachorrinho Azul</h3>
+                <p>R$ 39,90</p>
+            </div>
+        </section>
+        <section class="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <ul id="lista-carrinho"></ul>
+            <button onclick="irParaPagamento()">Finalizar Compra</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mundo Pelúcia</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
